@@ -1,0 +1,7 @@
+#Program 1- Simple program to understand R Studio
+
+2+2 #Basic maths
+
+1:100 #Prints number one to hundred
+
+print("Hello World!") #Print Hello World! on console 
