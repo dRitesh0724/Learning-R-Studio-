@@ -1,0 +1,36 @@
+#Array
+#given data, then dimensions(row,columns,tables)
+
+a1<- array(c(1:24), c(8,3,1)) #You can customise the table rows, columns, tables as you want.
+a1
+
+a2<- array(c(1:12),c(3,2,2))
+a2
+
+#Data Frame
+
+#In data frame we can combine vectors of smae length 
+
+vNumberic<- c(1,2,3,4,5)
+vCharacter<- c("a","b","c","d","e")
+vLogical<- c(T,F,T,T,F)
+#coerces all values to basic data type
+df1<- cbind(vNumberic,vCharacter,vLogical)
+df1
+
+#But we want this:-
+df2<- as.data.frame(cbind(vNumberic,vCharacter,vLogical))
+df2
+
+#List
+
+o1<- c(1,2,3)
+o2<- c("a","b","c","d","e")
+o3<- c(T,F,T,F)
+
+list1<- list(o1,o2,o3)
+list1
+
+#We going to put a list into a list
+list2<- list(o1,o2,o3,list1)
+list2
