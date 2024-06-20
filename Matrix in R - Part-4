@@ -1,0 +1,17 @@
+#Matrix:
+
+#Simple codes of R to understand in better way
+
+m1<- matrix(c(T,F,F,T), nrow=2)
+m1
+
+m2<- matrix(c(T,T,F,F,F,T), nrow = 3)
+m2
+
+#Another way to create a matrix
+
+m3<- matrix(c("a","b","c","d"), nrow = 2)
+m3
+
+m4<- matrix(c("a","b","c","d"), nrow = 2, byrow = T) #Here we have given True statement for printing the character in row format
+m4
