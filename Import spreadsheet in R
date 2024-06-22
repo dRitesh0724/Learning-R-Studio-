@@ -1,0 +1,15 @@
+#Import spreadsheet in R
+
+(df1<- read_csv("data/StateData.csv")) #You must put you address of file to load in there.
+(df2<- import("datd/StateData.xlsx")) #we had imported successfully 
+
+#or combine import with data preparation 
+
+df3<- import("data/StateData.xlsm") %>%
+  as_tibble( %>%)
+  select(state_code,
+         PsychRegion,
+         instagram: modernDance) %>%
+    mutate(PsychRegion= as.factor(PsychRegion)) %>%
+    rename(y= PsychRegion) %>%
+    print()
