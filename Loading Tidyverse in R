@@ -1,0 +1,20 @@
+#Install and load packages in R
+
+if(!require("pacman"))install.packages("pacman") #install pacman package
+pacman::p_load(pacman,party,psych,rio,tidyverse) #we have to load from the installed packages
+
+library(datasets) #Datasets those are already given
+
+#Get info about pacman package and numbers if data it content
+p_data(datasets) #about 104 hundreds of data it store
+
+p_data(tidyverse) #there will be an error occured. Because there is no tidyverse in this dataset
+
+#Load tidyverse
+
+p_data(ggplot2) #grammar of graphics
+p_data(dplyr) #data manipulations
+p_data(tidyr) #functions for tidy data
+p_data(stringr) #function for strings
+p_data(forcats) #factors and categories 
+
