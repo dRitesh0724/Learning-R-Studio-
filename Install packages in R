@@ -1,0 +1,17 @@
+#Install and load packages in R
+
+if(!require("pacman"))install.packages("pacman") #install pacman package
+pacman::p_load(pacman,party,psych,rio,tidyverse) #we have to load from the installed packages
+
+library(datasets) #Datasets those are already given
+?datasets
+library(help= "datasets") #Gives the info about the packages
+
+iris  #data from fisher and anderson
+?iris
+
+Titanic #Titanic survival data
+?Titanic
+
+anscombe #anscombe quartet
+?anscombe
